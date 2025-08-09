@@ -26,31 +26,30 @@ int main()
     type("HURRAYYYYY!!! LETS BEGIN IN\n");
     Sleep(500);
     // count down till game start
-    for (int i = 3; i >= 0; i--)
+    for (int i = 3; i > 0; i--)
     {
-        if (i != 0)
-        {
             printf("%d\n", i);
             Sleep(1000);
-        }
-        else 
-        {
-            type("START");
-            Sleep(1000);
-            break;
-        }
     }
+    type("START");
+    Sleep(1000);
     clear();
     // room number
     enum rooms CurrentRoom = ROOM1;
     char *room1_description = "you enter with bugtraps on the cieling and a computer on the desk.\n";
     type(room1_description);
-    type("type help for available commands.");
+    type("type help for available commands.\n");
 //    while(CurrentRoom == ROOM1)
 //    {
 //        char userinput[25];
 //        fgets(userinput, 25, stdin);
 //        if(strcmp(userinput
 //    }
+    type("end of program. terminating");
+    for(int i = 0; i < 3; i++)
+    {
+        type(".");
+        Sleep(1000);
+    }
     return 0;
 }
