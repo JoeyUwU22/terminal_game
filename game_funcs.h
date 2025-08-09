@@ -24,7 +24,8 @@ enum rooms {
 
 void clear(void);
 
-void type(char * text);
+void type(char *text);
 
 void clearinput(void);
+
 
