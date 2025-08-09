@@ -5,7 +5,7 @@ void clear(void)
     system("cls");
 }
 
-void type(char * text)
+void type(char *text)
 {
     int textlen = strlen(text);
     for (int i = 0; i < textlen; i++)
@@ -21,3 +21,4 @@ void clearinput(void)
     while((c = getchar()) != '\n' && c != EOF){}
     printf("\n");
 }
+
