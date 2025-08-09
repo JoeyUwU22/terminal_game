@@ -1,1 +1,1 @@
-working on a terminal game idk man
+to run the build.bat script, type "./build.bat" in the terminal. :) 
