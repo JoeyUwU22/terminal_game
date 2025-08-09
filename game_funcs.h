@@ -11,7 +11,7 @@
 
 typedef struct node 
 {
-    char *id = NULL;
+    char *id;
     char *dialogue;
     struct node *next;
     struct node *prev;
@@ -27,3 +27,4 @@ void clear(void);
 void type(char * text);
 
 void clearinput(void);
+
